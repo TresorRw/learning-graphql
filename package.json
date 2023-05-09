@@ -3,21 +3,20 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
-    "graphql": "^15.8.0",
-    "graphql-http": "^1.18.0"
+    "graphql": "^15.8.0"
   },
   "devDependencies": {
+    "@types/node": "^20.1.1",
     "nodemon": "^2.0.22"
   },
   "name": "learning-graphql",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "tsc && nodemon ./dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "type": "module"
+  "description": ""
 }
