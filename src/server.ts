@@ -1,4 +1,4 @@
-import express from "express";
+import express, {Application} from "express";
 import { graphqlHTTP } from "express-graphql";
 import { GraphQLString, GraphQLObjectType, GraphQLList, GraphQLSchema, GraphQLNonNull, GraphQLInt } from "graphql";
 import {config } from "dotenv"
@@ -87,7 +87,7 @@ const schema = new GraphQLSchema({
     query: RootQueryType,
     mutation: RootMutationType
 })
-const app = express();
+const app:Application = express();
 app.use("/graphql", graphqlHTTP({ schema, graphiql: true }))
 
 

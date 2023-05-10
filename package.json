@@ -8,6 +8,7 @@
     "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "@types/node": "^20.1.1"
   },
   "name": "learning-graphql",
@@ -16,7 +17,11 @@
   "scripts": {
     "dev": "tsnd --respawn ./src/server.ts"
   },
-  "keywords": ["grapql", "express-graphql", "typescript"],
+  "keywords": [
+    "grapql",
+    "express-graphql",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "description": ""
