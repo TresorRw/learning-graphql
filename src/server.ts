@@ -8,7 +8,6 @@ config()
 
 const PORT = process.env.PORT
 
-
 const RootQueryType = new GraphQLObjectType({
     name: "Query",
     description: "The primary query",
@@ -89,6 +88,5 @@ const schema = new GraphQLSchema({
 })
 const app:Application = express();
 app.use("/graphql", graphqlHTTP({ schema, graphiql: true }))
-
 
 app.listen(PORT, () => console.log(`Started at https://localhost:${PORT}/`))
